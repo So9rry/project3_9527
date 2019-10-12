@@ -34,7 +34,7 @@
         <mybatis-plus.version>2.3</mybatis-plus.version>
         <fastjson.version>1.2.47</fastjson.version>
         <velocity.version>1.7</velocity.version>
-        <kaptcha.version>2.3.2</kaptcha.version>
+<!--        <kaptcha.version>2.3.2</kaptcha.version>-->
         <ehcache.version>3.3.1</ehcache.version>
         <zxing.version>3.2.1</zxing.version>
         <druid.version>1.1.10</druid.version>
@@ -44,7 +44,7 @@
         <ehcache.core.version>2.6.11</ehcache.core.version>
         <mysql-connector-java.version>8.0.11</mysql-connector-java.version>
         <jwt.version>0.9.0</jwt.version>
-        <hutool.version>4.1.1</hutool.version>
+        <hutool.version>4.1.12</hutool.version>
     </properties>
 
     <dependencyManagement>
@@ -113,11 +113,11 @@
                 <artifactId>druid</artifactId>
                 <version>${druid.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.github.penggle</groupId>
-                <artifactId>kaptcha</artifactId>
-                <version>${kaptcha.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.github.penggle</groupId>-->
+<!--                <artifactId>kaptcha</artifactId>-->
+<!--                <version>${kaptcha.version}</version>-->
+<!--            </dependency>-->
             <dependency>
                 <groupId>org.ehcache</groupId>
                 <artifactId>ehcache</artifactId>
