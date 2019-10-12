@@ -1,13 +1,8 @@
 package com.stylefeng.guns.rest.modular.auth.validator.impl;
 
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.stylefeng.guns.rest.modular.auth.validator.IReqValidator;
 import com.stylefeng.guns.rest.modular.auth.validator.dto.Credence;
-import com.stylefeng.guns.rest.persistence.dao.UserMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 /**
  * 账号密码验证

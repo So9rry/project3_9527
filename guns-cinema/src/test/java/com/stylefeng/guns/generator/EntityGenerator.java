@@ -29,7 +29,7 @@ public class EntityGenerator {
 
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
-        gc.setOutputDir("H:\\后端\\project3_9527\\guns-user\\src\\main\\java");//这里写你自己的java目录
+        gc.setOutputDir("H:\\后端\\project3_9527\\guns-cinema\\src\\main\\java");//这里写你自己的java目录
         gc.setFileOverride(true);//是否覆盖
         gc.setActiveRecord(true);
         gc.setEnableCache(false);// XML 二级缓存
@@ -51,14 +51,16 @@ public class EntityGenerator {
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("123456");
-        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/guns_rest?autoReconnect=true&useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8");
+        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/mtime?autoReconnect=true&useUnicode=true&characterEncoding=utf8" +
+                "&serverTimezone=GMT%2B8");
         mpg.setDataSource(dsc);
 
         // 策略配置
         StrategyConfig strategy = new StrategyConfig();
         //strategy.setTablePrefix(new String[]{"_"});// 此处可以修改为您的表前缀
         strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
-        strategy.setInclude(new String[]{"user"});
+        String[] strings = new String[]{"mtime_brand_dict_t","mtime_area_dict_t","mtime_hall_dict_t", "mtime_cinema_t","mtime_field_t","mtime_hall_film_info_t"};
+        strategy.setInclude(strings);
         mpg.setStrategy(strategy);
 
         // 包配置

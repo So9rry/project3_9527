@@ -31,3 +31,10 @@ hs_err_pid*
 .classpath
 .project
 .settings/
+
+# log #
+guns-cinema.log
+guns-film.log
+guns-gateway.log
+guns-parent.log
+guns-user.log
